@@ -1,4 +1,4 @@
-# utt2spk ⇒ <utterance_ID> <speaker_ID>
+# utt2spk :- <utterance_ID> <speaker_ID>
 with open("../../../data/train/wav.scp",'r') as f:
     with open('../../../data/train/utt2spk','w') as fi:
         x=f.readlines()
