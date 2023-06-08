@@ -1,48 +1,48 @@
 # lattice-best-path --lm-scale=8 --word-symbol-table=exp/tri3b/graph/words.txt "ark:gunzip -c exp/tri3b/decode.si/lat.*.gz|" ark,t:exp/tri3b/decode.si/scoring/8.tra 
-# Started at Thu Jun  8 11:01:14 IST 2023
+# Started at Thu Jun  8 15:33:05 IST 2023
 #
 lattice-best-path --lm-scale=8 --word-symbol-table=exp/tri3b/graph/words.txt 'ark:gunzip -c exp/tri3b/decode.si/lat.*.gz|' ark,t:exp/tri3b/decode.si/scoring/8.tra 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_3_0, best cost 146.945 + 11949.1 = 12096.1 over 161 frames.
-pramod_2_3_0 3 2 0 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_5_6, best cost 162.985 + 12350.8 = 12513.8 over 161 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_3_0, best cost 164.359 + 12148 = 12312.4 over 161 frames.
+pramod_2_3_0 2 3 0 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_5_6, best cost 182.389 + 12687.1 = 12869.5 over 161 frames.
 pramod_2_5_6 2 8 6 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_3_9_2, best cost 118.052 + 13519 = 13637 over 151 frames.
-pramod_3_9_2 1 2 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_5_7, best cost 239.357 + 12597.3 = 12836.7 over 186 frames.
-pramod_4_5_7 3 4 8 7 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_8_3, best cost 102.343 + 10988.2 = 11090.6 over 152 frames.
-pramod_4_8_3 4 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_5_2_5, best cost 179.071 + 12038.1 = 12217.2 over 170 frames.
-pramod_5_2_5 7 2 5 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_1_1, best cost 205.243 + 13079 = 13284.3 over 165 frames.
-pramod_6_1_1 3 6 1 1 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_7_1, best cost 187.828 + 10950.5 = 11138.3 over 151 frames.
-pramod_6_7_1 6 7 1 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_0_9, best cost 202.151 + 12299.9 = 12502.1 over 162 frames.
-pramod_7_0_9 3 4 0 9 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_4_6, best cost 227.049 + 12022.3 = 12249.4 over 170 frames.
-pramod_7_4_6 3 7 4 6 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_2_3_3, best cost 83.7408 + 11022.6 = 11106.3 over 141 frames.
-srihari_2_3_3 2 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_4_1, best cost 209.214 + 16037.9 = 16247.1 over 223 frames.
-srihari_3_4_1 3 3 4 6 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_6_6, best cost 242 + 15425.4 = 15667.4 over 223 frames.
-srihari_3_6_6 3 1 3 6 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_1_3, best cost 142.81 + 12331.2 = 12474 over 171 frames.
-srihari_4_1_3 4 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_5_6, best cost 268.677 + 13741.3 = 14010 over 204 frames.
-srihari_4_5_6 3 4 5 1 6 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_3_3, best cost 241.013 + 18670.6 = 18911.6 over 229 frames.
-srihari_5_3_3 3 6 1 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_9_8, best cost 272.11 + 15462 = 15734.1 over 209 frames.
-srihari_5_9_8 3 7 0 9 8 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_6_7_7, best cost 264.18 + 19354.9 = 19619.1 over 270 frames.
-srihari_6_7_7 8 6 7 8 4 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_6, best cost 263.266 + 13063.1 = 13326.3 over 187 frames.
-srihari_8_4_6 4 4 6 1 6 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_7, best cost 209.285 + 15413.8 = 15623 over 228 frames.
-srihari_8_4_7 7 4 7 3 
-LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 74.39 = 1.06821 [graph] + 73.3217 [acoustic] over 3714 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_3_9_2, best cost 165.922 + 13744.5 = 13910.4 over 151 frames.
+pramod_3_9_2 6 3 2 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_5_7, best cost 202.828 + 12949.3 = 13152.2 over 186 frames.
+pramod_4_5_7 4 8 7 2 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_8_3, best cost 130.654 + 10933.3 = 11063.9 over 152 frames.
+pramod_4_8_3 7 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_5_2_5, best cost 171.156 + 12482.2 = 12653.3 over 170 frames.
+pramod_5_2_5 8 2 5 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_1_1, best cost 180.307 + 13230 = 13410.3 over 165 frames.
+pramod_6_1_1 6 1 1 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_7_1, best cost 179.384 + 11029.3 = 11208.6 over 151 frames.
+pramod_6_7_1 6 7 1 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_0_9, best cost 215.813 + 12732.1 = 12947.9 over 162 frames.
+pramod_7_0_9 4 8 0 9 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_4_6, best cost 169.16 + 12187.6 = 12356.7 over 170 frames.
+pramod_7_4_6 7 4 6 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_2_3_3, best cost 150.354 + 10681.3 = 10831.7 over 141 frames.
+srihari_2_3_3 2 3 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_4_1, best cost 231.615 + 15870.3 = 16101.9 over 223 frames.
+srihari_3_4_1 3 4 8 1 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_6_6, best cost 259.118 + 14325.1 = 14584.2 over 223 frames.
+srihari_3_6_6 3 3 6 6 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_1_3, best cost 208.373 + 11993.9 = 12202.3 over 171 frames.
+srihari_4_1_3 3 4 6 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_5_6, best cost 252.48 + 13710.6 = 13963.1 over 204 frames.
+srihari_4_5_6 3 4 4 6 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_3_3, best cost 221.505 + 18098.1 = 18319.6 over 229 frames.
+srihari_5_3_3 6 3 3 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_9_8, best cost 223.438 + 15457.6 = 15681 over 209 frames.
+srihari_5_9_8 3 6 9 8 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_6_7_7, best cost 284.586 + 19000.7 = 19285.3 over 270 frames.
+srihari_6_7_7 8 6 7 8 7 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_6, best cost 253.364 + 13035.4 = 13288.8 over 187 frames.
+srihari_8_4_6 8 8 4 6 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_7, best cost 204.376 + 15730.9 = 15935.3 over 228 frames.
+srihari_8_4_7 8 4 7 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 74.3346 = 1.09079 [graph] + 73.2438 [acoustic] over 3714 frames.
 LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:128) Done 20 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Thu Jun  8 11:01:14 IST 2023, elapsed time 0 seconds
+# Ended (code 0) at Thu Jun  8 15:33:05 IST 2023, elapsed time 0 seconds

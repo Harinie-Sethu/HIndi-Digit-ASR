@@ -2,7 +2,7 @@
 import os
 folder_dir=[os.path.abspath(name) for name in os.listdir(".") if os.path.isdir(name)]
 folder_name = [os.path.basename(name) for name in folder_dir]
-os.makedirs("../../../data/test/")
+# os.makedirs("../../../data/test/")
 with open('../../../data/test/wav.scp', 'w') as f:
     for k in range(len(folder_dir)):
         os.chdir(folder_dir[k])

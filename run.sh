@@ -9,9 +9,7 @@ lm_order=1
 . utils/parse_options.sh || exit 1
 [[ $# -ge 1 ]] && { echo "Wrong arguments!"; exit 1; }
 # this use to remove the data results of last execution
-rm -rf exp mfcc data/train/spk2utt data/train/cmvn.scp data/train/feats.scp data/train/split1
-data/test/spk2utt data/test/cmvn.scp data/test/feats.scp data /test/split1 data/local/lang
-data/lang data/local/tmp data/local/dict/lexiconp.txt
+rm -rf exp mfcc data/train/spk2utt data/train/cmvn.scp data/train/feats.scp data/train/split1 data/test/spk2utt data/test/cmvn.scp data/test/feats.scp data/test/split1 data/local/lang data/lang data/local/tmp data/local/dict/lexiconp.txt
 
 echo
 echo "===== PREPARING ACOUSTIC DATA ====="
@@ -61,7 +59,7 @@ echo
 # nonsilence_phones.txt [<phone>]
 # silence_phones.txt [<phone>]
 # optional_silence.txt [<phone>]
- utils/prepare_lang.sh data/local/dict "<UNK>" data/local/lang data/lang
+utils/prepare_lang.sh data/local/dict "<UNK>" data/local/lang data/lang
 echo
 echo "===== CREATING lm.arpa ====="
 echo
@@ -93,17 +91,17 @@ ngram-count -order $lm_order -write-vocab $local/tmp/vocab-full.txt -wbdiscount 
  echo
 
 lang=data/lang
-arpa2fst --disambig-symbol=#0 --read-symbol-table=$lang/words.txt $local/ tmp/lm.arpa $lang/G.fst
+arpa2fst --disambig-symbol=#0 --read-symbol-table=$lang/words.txt $local/tmp/lm.arpa $lang/G.fst
 
- echo
+echo
 echo "===== MONO TRAINING ====="
- echo
+echo
 
 steps/train_mono.sh --nj $nj --cmd "$train_cmd" data/train data/lang exp/mono || exit 1
 
- echo
+echo
 echo "===== MONO DECODING ====="
- echo
+echo
 
 utils/mkgraph.sh --mono data/lang exp/mono exp/mono/graph || exit 1
 steps/decode.sh --config conf/decode.config --nj $nj --cmd "$decode_cmd" exp/mono/graph data/test exp/mono/decode
