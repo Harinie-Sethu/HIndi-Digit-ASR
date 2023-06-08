@@ -1,0 +1,20 @@
+# lattice-depth-per-frame "ark:gunzip -c exp/tri2b_mpe/decode_it3/lat.2.gz|" "ark,t:|gzip -c > exp/tri2b_mpe/decode_it3/depth_tmp.2.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >exp/tri2b_mpe/decode_it3/ali_tmp.2.gz" 
+# Started at Thu Jun  8 10:57:12 IST 2023
+#
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >exp/tri2b_mpe/decode_it3/ali_tmp.2.gz' 
+lattice-depth-per-frame 'ark:gunzip -c exp/tri2b_mpe/decode_it3/lat.2.gz|' 'ark,t:|gzip -c > exp/tri2b_mpe/decode_it3/depth_tmp.2.gz' ark:- 
+LOG (lattice-depth-per-frame[5.5.1074~1-71f3]:main():lattice-depth-per-frame.cc:82) Done 10 lattices.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_2_3_3, best cost 15.0109 + 1153.26 = 1168.27 over 141 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_4_1, best cost 24.0575 + 1646.79 = 1670.85 over 223 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_3_6_6, best cost 26.6358 + 1572.2 = 1598.83 over 223 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_1_3, best cost 22.728 + 1254.4 = 1277.13 over 171 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_4_5_6, best cost 24.9294 + 1423.25 = 1448.18 over 204 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_3_3, best cost 32.4994 + 1859.35 = 1891.84 over 229 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_5_9_8, best cost 31.4379 + 1570.67 = 1602.11 over 209 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_6_7_7, best cost 29.1247 + 1979.75 = 2008.87 over 270 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_6, best cost 22.1284 + 1358.09 = 1380.22 over 187 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance srihari_8_4_7, best cost 27.1847 + 1576.95 = 1604.13 over 228 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 7.50621 = 0.122656 [graph] + 7.38355 [acoustic] over 2085 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Jun  8 10:57:12 IST 2023, elapsed time 0 seconds

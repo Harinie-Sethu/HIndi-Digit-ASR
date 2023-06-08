@@ -1,0 +1,93 @@
+# gmm-est-gaussians-ebw exp/tri2b_ali/final.mdl "gmm-ismooth-stats --smooth-from-model=true --tau=400 exp/tri2b_ali/final.mdl exp/tri2b_mpe/num_acc.0.acc -|" exp/tri2b_mpe/den_acc.0.acc - | gmm-est-weights-ebw - exp/tri2b_mpe/num_acc.0.acc exp/tri2b_mpe/den_acc.0.acc exp/tri2b_mpe/1.mdl 
+# Started at Thu Jun  8 10:57:01 IST 2023
+#
+gmm-est-gaussians-ebw exp/tri2b_ali/final.mdl 'gmm-ismooth-stats --smooth-from-model=true --tau=400 exp/tri2b_ali/final.mdl exp/tri2b_mpe/num_acc.0.acc -|' exp/tri2b_mpe/den_acc.0.acc - 
+gmm-est-weights-ebw - exp/tri2b_mpe/num_acc.0.acc exp/tri2b_mpe/den_acc.0.acc exp/tri2b_mpe/1.mdl 
+gmm-ismooth-stats --smooth-from-model=true --tau=400 exp/tri2b_ali/final.mdl exp/tri2b_mpe/num_acc.0.acc - 
+LOG (gmm-ismooth-stats[5.5.1074~1-71f3]:main():gmm-ismooth-stats.cc:126) Smoothed stats with tau = 400, count changed from 170.314 to 555770
+LOG (gmm-est-gaussians-ebw[5.5.1074~1-71f3]:main():gmm-est-gaussians-ebw.cc:98) Num count 555770, den count 170.314
+LOG (gmm-est-gaussians-ebw[5.5.1074~1-71f3]:main():gmm-est-gaussians-ebw.cc:100) Overall auxf impr/frame from Gaussian update is 0.517142 over 170.314 frames; floored D for 0 Gaussians.
+LOG (gmm-est-gaussians-ebw[5.5.1074~1-71f3]:main():gmm-est-gaussians-ebw.cc:111) Written model to -
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 9.87086e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.64935e-11 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.548149 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.400916 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 5.43268 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 6.80166 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 4.69026e-09 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.206703 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.87162 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.90356e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.74649 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.456074 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 6.1317e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.06898e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 8.17977e-11 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.0116078 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.26684 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 5.84009 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.413518 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.03398e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.75522e-08 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 4.9687 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.3138 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 5.25233e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.01351e-09 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.01837e-08 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.42773 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.684111 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.53413 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 5.43268 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.8591e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.58764e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 4.09642 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 7.03713 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 6.24425e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.45974e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.69124 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.18482e-09 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 5.5358 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.09072 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 4.3957e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.62004e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.228037 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.37347 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.21645e-11 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 6.08225e-12 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.3721 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 3.56297 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.66186 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.26684 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.10219e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.87162 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 6.55388 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.84939 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.83243 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.756357 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 8.02686e-10 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.99676 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.26684 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 4.03967 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 8.8053 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.188931 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.15392e-11 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 1.74649 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 0.206703 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:UpdateEbwWeightsDiagGmm():ebw-diag-gmm.cc:223) Not updating weights for this state because total count is 2.9786e-11 < 10
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:main():gmm-est-weights-ebw.cc:96) Num count 170.314, den count 170.314
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:main():gmm-est-weights-ebw.cc:98) Overall auxf impr/frame from weight update is 0.838104 over 170.314 frames.
+LOG (gmm-est-weights-ebw[5.5.1074~1-71f3]:main():gmm-est-weights-ebw.cc:110) Written model to exp/tri2b_mpe/1.mdl
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Jun  8 10:57:02 IST 2023, elapsed time 1 seconds

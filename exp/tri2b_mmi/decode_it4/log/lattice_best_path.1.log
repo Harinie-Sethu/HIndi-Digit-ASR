@@ -1,0 +1,20 @@
+# lattice-depth-per-frame "ark:gunzip -c exp/tri2b_mmi/decode_it4/lat.1.gz|" "ark,t:|gzip -c > exp/tri2b_mmi/decode_it4/depth_tmp.1.gz" ark:- | lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null "ark,t:|gzip -c >exp/tri2b_mmi/decode_it4/ali_tmp.1.gz" 
+# Started at Thu Jun  8 10:56:40 IST 2023
+#
+lattice-depth-per-frame 'ark:gunzip -c exp/tri2b_mmi/decode_it4/lat.1.gz|' 'ark,t:|gzip -c > exp/tri2b_mmi/decode_it4/depth_tmp.1.gz' ark:- 
+lattice-best-path --acoustic-scale=0.1 ark:- ark:/dev/null 'ark,t:|gzip -c >exp/tri2b_mmi/decode_it4/ali_tmp.1.gz' 
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_3_0, best cost 21.4583 + 1255.77 = 1277.22 over 161 frames.
+LOG (lattice-depth-per-frame[5.5.1074~1-71f3]:main():lattice-depth-per-frame.cc:82) Done 10 lattices.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_2_5_6, best cost 27.184 + 1299.65 = 1326.83 over 161 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_3_9_2, best cost 14.9188 + 1410.01 = 1424.93 over 151 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_5_7, best cost 27.0163 + 1300.76 = 1327.78 over 186 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_4_8_3, best cost 11.9279 + 1132.25 = 1144.17 over 152 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_5_2_5, best cost 23.2253 + 1252.95 = 1276.17 over 170 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_1_1, best cost 13.5232 + 1373.98 = 1387.5 over 165 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_6_7_1, best cost 17.2748 + 1141.58 = 1158.86 over 151 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_0_9, best cost 19.3836 + 1227.06 = 1246.44 over 162 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:99) For utterance pramod_7_4_6, best cost 26.3376 + 1231.1 = 1257.44 over 170 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:124) Overall cost per frame is 7.87437 = 0.124156 [graph] + 7.75022 [acoustic] over 1629 frames.
+LOG (lattice-best-path[5.5.1074~1-71f3]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Jun  8 10:56:40 IST 2023, elapsed time 0 seconds

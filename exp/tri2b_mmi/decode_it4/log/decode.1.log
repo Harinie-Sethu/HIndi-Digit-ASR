@@ -1,0 +1,35 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2b/graph/words.txt exp/tri2b_mmi/4.mdl exp/tri2b/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b_mmi/final.mat ark:- ark:- |" "ark:|gzip -c > exp/tri2b_mmi/decode_it4/lat.1.gz" 
+# Started at Thu Jun  8 10:56:39 IST 2023
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri2b/graph/words.txt exp/tri2b_mmi/4.mdl exp/tri2b/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- | splice-feats --left-context=3 --right-context=3 ark:- ark:- | transform-feats exp/tri2b_mmi/final.mat ark:- ark:- |' 'ark:|gzip -c > exp/tri2b_mmi/decode_it4/lat.1.gz' 
+apply-cmvn --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- 
+splice-feats --left-context=3 --right-context=3 ark:- ark:- 
+LOG (apply-cmvn[5.5.1074~1-71f3]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+transform-feats exp/tri2b_mmi/final.mat ark:- ark:- 
+pramod_2_3_0 2 0 0 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_2_3_0 is -6.63308 over 161 frames.
+pramod_2_5_6 2 4 6 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_2_5_6 is -6.89578 over 161 frames.
+pramod_3_9_2 8 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_3_9_2 is -7.88028 over 151 frames.
+pramod_4_5_7 4 4 7 3 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_4_5_7 is -5.97302 over 186 frames.
+pramod_4_8_3 4 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_4_8_3 is -6.28594 over 152 frames.
+pramod_5_2_5 4 2 4 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_5_2_5 is -6.27849 over 170 frames.
+pramod_6_1_1 4 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_6_1_1 is -7.02122 over 165 frames.
+LOG (transform-feats[5.5.1074~1-71f3]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -66.8189 over 1629 frames.
+LOG (transform-feats[5.5.1074~1-71f3]:main():transform-feats.cc:161) Applied transform to 10 utterances; 0 had errors.
+pramod_6_7_1 4 3 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_6_7_1 is -6.41452 over 151 frames.
+pramod_7_0_9 4 0 9 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_7_0_9 is -6.43164 over 162 frames.
+pramod_7_4_6 4 4 4 
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance pramod_7_4_6 is -6.1897 over 170 frames.
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:176) Time taken 0.450898s: real-time factor assuming 100 frames/sec is 0.0276794
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:179) Done 10 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.1074~1-71f3]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.58264 over 1629 frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Jun  8 10:56:40 IST 2023, elapsed time 1 seconds
